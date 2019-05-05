@@ -9,6 +9,7 @@ public class DiretorRefeicao {
         else
             refeicaoBuilder.adicionarSuco(sabor);                
         refeicaoBuilder.prepadaHamburgerCarne();
+        refeicaoBuilder.adicionarBatata();
         return novaRefeicao;        
     }
 	
@@ -20,16 +21,8 @@ public class DiretorRefeicao {
         else
             refeicaoBuilder.adicionarSuco(sabor);     
         refeicaoBuilder.preparaHamburgerVegetariano();
-        return novaRefeicao;        
+        refeicaoBuilder.adicionarBatata();
+        return novaRefeicao;
     }
-    
-    public Refeicao preparaBatata(){        
-        Refeicao batata = new Refeicao();
-        BatataBuilder batataBuilder = new BatataBuilder(batata);
-        batataBuilder.preparaBatata();
-        return batata;        
-    }
-    
-    
 
 }

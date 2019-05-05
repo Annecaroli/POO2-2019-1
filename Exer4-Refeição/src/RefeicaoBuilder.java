@@ -1,7 +1,7 @@
 
 public class RefeicaoBuilder {
 	
-	static Refeicao refeicao;        
+	Refeicao refeicao;        
     
     public void adicionarSuco(String sabor){                                
         refeicao.setBebida(new Suco(sabor));        
@@ -11,7 +11,7 @@ public class RefeicaoBuilder {
         refeicao.setBebida(new Refrigerante(sabor));        
     }
     
-    public void preparaBatata() {
+    public void adicionarBatata() {
     	refeicao.setBatata(new Batata());
     }
 	
